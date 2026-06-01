@@ -69,6 +69,16 @@ body {
   color: var(--white);
 }
 
+.nav-cta {
+  background-color: var(--red);
+  color: var(--white) !important;
+  font-weight: 600;
+}
+
+.nav-cta:hover {
+  background-color: var(--red-dark) !important;
+}
+
 /* Hero */
 header {
   background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%);
@@ -194,7 +204,7 @@ section h2 {
 /* Contact section */
 #contact {
   text-align: center;
-  background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%) !important;
+  background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%);
 }
 
 #contact h2 {
@@ -205,6 +215,47 @@ section h2 {
   color: rgba(255, 255, 255, 0.8);
   margin: 0 0 24px;
   font-size: 1.05rem;
+}
+
+/* Contact form */
+.contact-form {
+  max-width: 480px;
+  margin: 24px auto 0;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--white);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.25);
 }
 
 /* Footer */
